@@ -27,14 +27,46 @@
 
 <body>
   <div class="wrapper">
-    <header>
-      <div class="container"></div>
+    <header class="header">
+      <div class="container">
+        <div class="nav">
+          <a href="index.html">
+            <picture>
+              <source media="(max-width: 320px)" srcset="img/svg/logo.svg" width="35" height="35">
+              <img src="img/svg/logo.svg" alt="логотип компании." class="nav__logo" width="55" height="55">
+            </picture>
+
+
+            <div class="nav__logo--desc">
+              <p>Smart Device</p>
+              <span>умные технологии</span>
+            </div>
+          </a>
+          <ul class="nav__list">
+            <li>
+              <a href="mailto:www.info@sd.ru">
+                <img src="img/sprite/email.svg" alt="иконка почты." width="20" height="20">
+                <span>info@sd.ru</span>
+              </a>
+            </li>
+            <li>
+              <a href="tel:+74950005252">
+                <img src="img/sprite/phone.svg" alt="иконка телефона." width="20" height="19">
+                <span>+7 (495) 000 52 52</span>
+              </a>
+            </li>
+          </ul>
+          <button type="button">Заказать звонок</button>
+        </div>
+
     </header>
     <main>
-
+      <div class="container"></div>
     </main>
     <footer>
-      <div class="container"></div>
+      <div class="container">
+
+      </div>
     </footer>
   </div>
 

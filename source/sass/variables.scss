@@ -10,8 +10,11 @@ $color-transparent: rgba(255, 255, 255, 0);
 // Project palette
 // для нейминга цветов используем https://www.htmlcsscolor.com/hex/334482
 
-$color-neon-blue: #2c39f2;
-$color-torch-red: #ff1553;
+$color-light-bue: #00b2ff;
+$color-dark-blue :#041827;
+$color-white :#f2f5f7;
+$color-dark: #041827;
+$color-dark-btn :#041427;
 
 // Gradient
 
@@ -58,3 +61,14 @@ $vp-1920: 1920px;
 
 $retina-dpi: 144dpi;
 $retina-dppx: 1.5dppx;
+
+
+// внутри div
+// .text{
+//   background:url(https://upload.wikimedia.org/wikipedia/ru/1/1d/%D0%91%D0%B5%D0%B7%D0%BC%D1%8F%D1%82%D0%B5%D0%B6%D0%BD%D0%BE%D1%81%D1%82%D1%8C.png) no-repeat center/cover;
+//   -webkit-background-clip:text;
+//   -webkit-text-fill-color: transparent;
+//   color:yellow;
+//   font-weight:bold;
+//   font-size:90px;
+// }

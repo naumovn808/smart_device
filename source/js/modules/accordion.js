@@ -15,6 +15,7 @@ function accordion() {
 
       if (part.querySelector('.part-site').classList.contains('is-active')) {
         ofice.querySelector('div').classList.remove('is-active');
+        ofice.querySelector('span').classList.remove('is-close');
       }
     });
   }
@@ -28,6 +29,7 @@ function accordion() {
 
       if (ofice.querySelector('div').classList.contains('is-active')) {
         part.querySelector('.part-site').classList.remove('is-active');
+        part.querySelector('span').classList.remove('is-close');
       }
     });
   }

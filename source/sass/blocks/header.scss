@@ -9,6 +9,11 @@
     order: -1;
     margin-bottom: -100px;
   }
+
+  @include vp-374 {
+    margin-bottom: -70px;
+  }
+
 }
 
 .nav {
@@ -58,6 +63,7 @@
   font-weight: 700;
   font-size: 22px;
   line-height: 20px;
+  color: $color-white;
 }
 
 .nav span {

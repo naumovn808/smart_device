@@ -32,8 +32,8 @@
 .article {
   width: 900px;
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 48.5%;
+  left: 48%;
   transform: translate(-50%, -50%);
 
   @include vp-1279 {
@@ -42,17 +42,28 @@
   }
 
   @include vp-767 {
-    top: 40%;
-    max-width: calc(100vw - 15%);
-    left: calc(100vw - 56%);
+    margin: 0 20px;
+    top: 45.5%;
+    max-width: 655px;
+    left: calc(100vw - 51%);
     width: 100%;
+  }
+
+  @include vp-374 {
+    top: 47%;
+    left: calc(100vw - 50%);
+    margin: 0;
+    margin-left: 15px;
+    max-width: 300px;
   }
 
 }
 
 .article h1 {
+  display: block;
+  margin-bottom: 32px;
   font-weight: 700;
-  font-size: 80px;
+  font-size: 71px;
   line-height: 94px;
   letter-spacing: 0.07em;
   text-transform: uppercase;
@@ -64,12 +75,21 @@
   }
 
   @include vp-767 {
-    font-size: 36px;
-    line-height: 42px;
+    font-size: 57px;
+    line-height: 57px;
+    margin-bottom: 10px;
+  }
+
+  @include vp-374 {
+    font-size: 32px;
+    line-height: 44px;
+    margin-bottom: 6px;
   }
 }
 
 .article p {
+  display: block;
+  margin-bottom: 50px;
   max-width: 680px;
   font-family: $ff-pt_mono;
   font-weight: 400;
@@ -83,33 +103,53 @@
   }
 
   @include vp-767 {
+    font-size: 22px;
+  }
+
+  @include vp-374 {
+    max-width: 300px;
     font-size: 14px;
+    margin-bottom: 46px;
   }
 }
 
 .article a {
   background: $color-light-bue;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 21px;
   text-align: center;
   letter-spacing: 0.05em;
-
   text-transform: uppercase;
   color: $color-white;
 
   @include vp-767 {
-    font-size: 14px;
-    line-height: 16px;
+    font-size: 16px;
+    line-height: 22px;
+    margin-left: 46px;
+    margin-top: 8px;
+  }
+
+  @media(max-width: 550px) {
     display: none;
+    margin-left: 0;
+    max-width: 350px;
   }
 }
 
 .article .btn-mobile {
   display: none;
 
-  @include vp-767 {
+  @media(max-width: 550px) {
     display: block;
     text-align: center;
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  @include vp-374 {
+    margin-top: 0;
+    font-size: 12px;
+    max-width: 265px;
   }
 }

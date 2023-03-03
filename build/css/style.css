@@ -1618,7 +1618,7 @@ p {
   width: 900px;
   position: absolute;
   top: 48.5%;
-  left: 48.5%;
+  left: 48%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
@@ -1706,14 +1706,6 @@ p {
   fill: #f2f5f7;
 }
 
-.card:nth-of-type(3) {
-  min-height: 325px;
-}
-
-.card:nth-of-type(4) {
-  min-height: 325px;
-}
-
 .card svg {
   fill: #00b2ff;
 }
@@ -1735,6 +1727,90 @@ p {
   font-size: 16px;
   line-height: 135%;
   color: #041827;
+}
+
+.about {
+  background: #F8FDFF;
+}
+
+.about-wrapper {
+  position: relative;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding-bottom: 121px;
+}
+
+.year-picture {
+  position: absolute;
+  top: 14%;
+  left: -5%;
+  -webkit-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+
+.year-picture p {
+  letter-spacing: -8px;
+  font-weight: 700;
+  font-size: 155px;
+  line-height: 220px;
+  color: #00B35D;
+  display: inline;
+  background-image: url("/img/background-text.png");
+  background-size: cover;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.about__description {
+  margin-left: 260px;
+  overflow: hidden;
+}
+
+.about__description ul {
+  padding-left: 0;
+  max-height: 125px;
+  margin-bottom: 50px;
+}
+
+.about__description h2 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 48px;
+  color: #041827;
+}
+
+.about__description li {
+  list-style: none;
+}
+
+.about__description p {
+  margin-bottom: 21px;
+  font-family: "pt_mono", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #041827;
+}
+
+.btn-about {
+  margin-top: 16px;
+  cursor: pointer;
+  display: block;
+  margin-right: auto;
+  margin-left: 260px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 13px 49px;
+  color: #00B2FF;
+  border: 1px solid #00B2FF;
+  border-radius: 3px;
 }
 
 /* @mixin hover-focus {
@@ -1833,6 +1909,12 @@ p {
   }
 }
 
+@media (max-width: 1160px) {
+  .about__description ul {
+    max-height: 150px;
+  }
+}
+
 @media (max-width: 1023px) {
   .container {
     padding: 0 24px;
@@ -1919,6 +2001,16 @@ p {
     padding: 100px 70px 100px 50px;
     -ms-grid-columns: (1fr)[2];
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about__description ul {
+    max-height: 190px;
+  }
+}
+
+@media (max-width: 900px) {
+  .about__description ul {
+    max-height: 215px;
   }
 }
 
@@ -2147,7 +2239,7 @@ p {
   }
 
   .cards {
-    padding: 80px 50px 100px 50px;
+    padding: 80px 50px 75px 50px;
   }
 
   .card {
@@ -2163,6 +2255,32 @@ p {
 
   .card p {
     margin-bottom: 0;
+  }
+
+  .about-wrapper {
+    padding-bottom: 78px;
+  }
+
+  .year-picture {
+    top: 13%;
+    left: -5%;
+  }
+
+  .year-picture p {
+    font-size: 152px;
+  }
+
+  .about__description {
+    margin-left: 210px;
+    margin-right: 30px;
+  }
+
+  .about__description ul {
+    margin-bottom: 34px;
+  }
+
+  .btn-about {
+    margin-left: 206px;
   }
 }
 
@@ -2229,6 +2347,12 @@ p {
   }
 }
 
+@media (max-width: 650px) {
+  .year-picture {
+    left: -12%;
+  }
+}
+
 @media (max-width: 600px) {
   .cards {
     -ms-grid-columns: 1fr;
@@ -2249,6 +2373,20 @@ p {
     text-align: center;
     font-size: 14px;
     padding: 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  .year-picture {
+    display: none;
+  }
+
+  .about__description {
+    margin-left: 20px;
+  }
+
+  .btn-about {
+    margin-left: 20px;
   }
 }
 
@@ -2342,9 +2480,21 @@ p {
     max-width: 265px;
   }
 
+  .cards {
+    padding-bottom: 40px;
+  }
+
   .card {
     padding: 30px;
     min-height: 340px;
+  }
+
+  .card:nth-of-type(3) {
+    min-height: 325px;
+  }
+
+  .card:nth-of-type(4) {
+    min-height: 325px;
   }
 
   .card svg {
@@ -2361,6 +2511,32 @@ p {
 
   .card p {
     font-size: 14px;
+  }
+
+  .about__description {
+    margin-left: 10px;
+    margin-right: 0;
+  }
+
+  .about__description ul {
+    margin-top: 0;
+    max-height: 173px;
+  }
+
+  .about__description h2 {
+    font-size: 25px;
+    margin-bottom: 9px;
+  }
+
+  .about__description p {
+    margin-top: 0;
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  .btn-about {
+    margin-left: 10px;
+    padding: 9px 37px;
   }
 }
 

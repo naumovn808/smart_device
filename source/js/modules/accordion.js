@@ -5,7 +5,6 @@ function accordion() {
 
   const ofice = document.querySelector('.our-ofice');
 
-
   if (part) {
     part.addEventListener('click', (evt) => {
       if (evt.target.closest(btn)) {

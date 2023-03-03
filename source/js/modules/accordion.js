@@ -1,4 +1,4 @@
-function accordion() {
+function footerAccordion() {
 
   const btn = 'button[data-open-icon="plus"]';
   const part = document.querySelector('.part-wrapper');
@@ -35,6 +35,24 @@ function accordion() {
 
 }
 
-accordion();
+footerAccordion();
+const btn = document.querySelector('button[data-about-open=""]');
 
-export default accordion;
+const list = document.querySelector('.about__description');
+
+function aboutAccordion() {
+
+  if (btn) {
+    btn.addEventListener('click', () => {
+      btn.textContent = 'свернуть';
+      if (list.classList.contains('is-active')) {
+        btn.textContent = 'подробнее';
+      }
+      list.classList.toggle('is-active');
+    });
+  }
+}
+
+aboutAccordion();
+export default {footerAccordion, aboutAccordion};
+

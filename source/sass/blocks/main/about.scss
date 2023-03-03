@@ -16,7 +16,7 @@
 
 .year-picture {
   position: absolute;
-  top: 14%;
+  top: 30px;
   left: -5%;
   transform: rotate(270deg);
 
@@ -55,6 +55,7 @@
 }
 
 .about__description {
+  max-height: 240px;
   margin-left: 260px;
   overflow: hidden;
 
@@ -75,29 +76,15 @@
 
 .about__description ul {
   padding-left: 0;
-  max-height: 125px;
   margin-bottom: 50px;
-
-  @media (max-width: 1160px) {
-    max-height: 150px;
-  }
-
-  @include vp-1023 {
-    max-height: 190px;
-  }
-
-  @media (max-width: 900px) {
-    max-height: 215px;
-  }
-
-  @include vp-767 {
-    margin-bottom: 34px;
-  }
 
   @include vp-374 {
     margin-top: 0;
-    max-height: 173px;
   }
+}
+
+.is-active {
+  max-height: 100%;
 }
 
 .about__description h2 {
@@ -162,16 +149,3 @@
     padding: 9px 37px;
   }
 }
-
-
-
-
-// внутри div
-// .text{
-//   background:url(https://upload.wikimedia.org/wikipedia/ru/1/1d/%D0%91%D0%B5%D0%B7%D0%BC%D1%8F%D1%82%D0%B5%D0%B6%D0%BD%D0%BE%D1%81%D1%82%D1%8C.png) no-repeat center/cover;
-//   -webkit-background-clip:text;
-//   -webkit-text-fill-color: transparent;
-//   color:yellow;
-//   font-weight:bold;
-//   font-size:90px;
-// }

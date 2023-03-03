@@ -46,16 +46,14 @@
     top: 45.5%;
     max-width: 655px;
     left: calc(100vw - 53%);
-    width: 100%;
+    width: 98%;
   }
 
   @include vp-374 {
     top: 44%;
     left: calc(100vw - 50%);
     margin: 0;
-    margin-left: 15px;
     max-width: 302px;
-    padding-left: 0;
   }
 
 }

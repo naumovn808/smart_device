@@ -35,12 +35,10 @@ function footerAccordion() {
 
 }
 
-footerAccordion();
-const btn = document.querySelector('button[data-about-open=""]');
-
-const list = document.querySelector('.about__description');
-
 function aboutAccordion() {
+
+  const btn = document.querySelector('button[data-about-open=""]');
+  const list = document.querySelector('.about__description');
 
   if (btn) {
     btn.addEventListener('click', () => {
@@ -53,6 +51,15 @@ function aboutAccordion() {
   }
 }
 
-aboutAccordion();
-export default {footerAccordion, aboutAccordion};
+function changeTitleText() {
+  const goods = document.querySelector('.goods');
+  const title = goods.querySelector('h2');
+  const newText = goods.querySelector('span');
+
+  if (window.innerWidth <= 374) {
+    title.textContent = newText.textContent;
+  }
+}
+
+export {footerAccordion, aboutAccordion, changeTitleText};
 

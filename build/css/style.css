@@ -1908,6 +1908,258 @@ p {
   display: none;
 }
 
+.form {
+  background: -o-linear-gradient(135deg, rgb(0, 179, 255) 65%, rgb(2, 100, 146) 18%);
+  background: linear-gradient(315deg, rgb(0, 179, 255) 65%, rgb(2, 100, 146) 18%);
+}
+
+.plane {
+  margin: auto 0;
+}
+
+.form-container {
+  max-width: 1180px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  padding: 170px 0;
+}
+
+.form-wrapper {
+  margin-left: auto;
+  max-width: 580px;
+}
+
+.form-wrapper h3 {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+  color: #ffffff;
+}
+
+.form-wrapper p {
+  font-family: "pt_mono", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.form__field {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.form__field input {
+  width: 100%;
+  font-family: "pt_mono", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+  border: none;
+  border-radius: 3px;
+  background-color: rgb(1, 155, 223);
+  padding: 15px;
+}
+
+.form__field input::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+.form__field input::-moz-placeholder {
+  color: #ffffff;
+}
+
+.form__field input:-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.form__field input::-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.form__field input::placeholder {
+  color: #ffffff;
+}
+
+.form__field input:hover {
+  background-color: rgba(1, 156, 223, 0.778);
+}
+
+.form__field-text {
+  margin-bottom: 20px;
+}
+
+.form__field-text textarea {
+  width: 100%;
+  background-color: rgb(1, 155, 223);
+  color: #ffffff;
+  padding: 15px;
+  border: none;
+  border-radius: 3px;
+  font-family: "pt_mono", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.form__field-text textarea::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+.form__field-text textarea::-moz-placeholder {
+  color: #ffffff;
+}
+
+.form__field-text textarea:-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.form__field-text textarea::-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.form__field-text textarea::placeholder {
+  color: #ffffff;
+}
+
+.form__field-text textarea:hover {
+  border: none;
+  background-color: rgba(1, 156, 223, 0.778);
+}
+
+.form__submit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.form__submit label {
+  max-width: 245px;
+  margin-left: 20px;
+}
+
+.form__submit button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 10px 50px;
+}
+
+.form-checkbox {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+}
+
+.form-checkbox label {
+  font-family: "pt_mono", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  opacity: 0.6;
+}
+
+.form-checkbox input {
+  width: 1px;
+  height: 1px;
+}
+
+.form-checkbox input:checked::after {
+  content: "";
+}
+
+.form-checkbox label + input::before {
+  position: absolute;
+  top: 8px;
+  right: 265px;
+  content: "";
+  display: block;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #ffffff;
+  border-radius: 2px;
+}
+
+.form-checkbox label + input::after {
+  display: block;
+  position: absolute;
+  top: 12px;
+  left: -10px;
+  -webkit-transform: rotate(130deg);
+  -ms-transform: rotate(130deg);
+  transform: rotate(130deg);
+  width: 6px;
+  height: 4px;
+  border-top: 1px solid #ffffff;
+  border-right: 1px solid #ffffff;
+}
+
+/* @mixin hover-focus {
+    @media (hover: hover) {
+      &:hover:not(.focus-visible) {
+        @content;
+      }
+    }
+
+    &.focus-visible:focus {
+      @content;
+    }
+  }
+*/
+
+/*  @include hover-focus {
+      opacity: 0.8;
+    }
+*/
+
+/*@mixin hover {
+    @media (hover: hover) {
+      &:hover:not(.focus-visible) {
+        @content;
+      }
+    }
+  }
+*/
+
+/*@mixin focus {
+    &.focus-visible:focus {
+      @content;
+    }
+  }
+*/
+
+/*@mixin active {
+    &.focus-visible:active {
+      @content;
+    }
+  }
+*/
+
 @media (max-width: 1439px) {
   .container {
     padding: 0 32px;

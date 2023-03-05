@@ -1,13 +1,15 @@
 .goods {
   background-color: $color-dark;
-  padding: 50px 0;
+  padding: 50px 0 140px 0;
 
   @include vp-767 {
     padding-top: 40px;
+    padding-bottom: 75px;
   }
 
   @include vp-374 {
     padding-top: 32px;
+    padding-bottom: 83px;
   }
 }
 

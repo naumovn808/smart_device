@@ -1819,7 +1819,7 @@ p {
 
 .goods {
   background-color: #041827;
-  padding: 50px 0;
+  padding: 50px 0 140px 0;
 }
 
 .goods h2 {
@@ -1909,38 +1909,44 @@ p {
 }
 
 .form {
-  background: -o-linear-gradient(135deg, rgb(0, 179, 255) 65%, rgb(2, 100, 146) 18%);
-  background: linear-gradient(315deg, rgb(0, 179, 255) 65%, rgb(2, 100, 146) 18%);
+  background: -o-linear-gradient(130.8deg, rgb(0, 179, 255) 66.5%, rgb(2, 100, 146) 18%);
+  background: linear-gradient(319.2deg, rgb(0, 179, 255) 66.5%, rgb(2, 100, 146) 18%);
 }
 
 .plane {
-  margin: auto 0;
+  margin-top: 82px;
+  margin-left: -12px;
+  padding-right: 20px;
 }
 
 .form-container {
-  max-width: 1180px;
+  max-width: 1200px;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-line-pack: center;
   align-content: center;
-  padding: 170px 0;
+  padding: 164px 0 248px 0;
 }
 
 .form-wrapper {
   margin-left: auto;
-  max-width: 580px;
+  width: 584px;
 }
 
 .form-wrapper h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
   font-weight: 400;
-  font-size: 36px;
+  font-size: 32px;
   line-height: 51px;
   color: #ffffff;
 }
 
 .form-wrapper p {
+  margin-top: 0;
+  margin-bottom: 38px;
   font-family: "pt_mono", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -1954,7 +1960,7 @@ p {
   display: -ms-flexbox;
   display: flex;
   gap: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 18px;
 }
 
 .form__field input {
@@ -1995,20 +2001,21 @@ p {
 }
 
 .form__field-text {
-  margin-bottom: 20px;
+  margin-bottom: 27px;
 }
 
 .form__field-text textarea {
   width: 100%;
   background-color: rgb(1, 155, 223);
   color: #ffffff;
-  padding: 15px;
+  padding: 21px 15px;
   border: none;
   border-radius: 3px;
   font-family: "pt_mono", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
+  height: 156px;
 }
 
 .form__field-text textarea::-webkit-input-placeholder {
@@ -2054,14 +2061,15 @@ p {
 }
 
 .form__submit button {
+  font-family: "pt_mono", "Arial", sans-serif;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 19px;
   text-align: center;
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #ffffff;
-  padding: 10px 50px;
+  padding: 13px 71px;
 }
 
 .form-checkbox {
@@ -2076,12 +2084,15 @@ p {
 }
 
 .form-checkbox label {
+  margin-top: 15px;
+  padding-left: 4px;
   font-family: "pt_mono", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
   color: #ffffff;
   opacity: 0.6;
+  margin-left: 40px;
 }
 
 .form-checkbox input {
@@ -2095,8 +2106,8 @@ p {
 
 .form-checkbox label + input::before {
   position: absolute;
-  top: 8px;
-  right: 265px;
+  top: 22px;
+  left: 20px;
   content: "";
   display: block;
   width: 15px;
@@ -2108,8 +2119,8 @@ p {
 .form-checkbox label + input::after {
   display: block;
   position: absolute;
-  top: 12px;
-  left: -10px;
+  top: 26px;
+  left: 24px;
   -webkit-transform: rotate(130deg);
   -ms-transform: rotate(130deg);
   transform: rotate(130deg);
@@ -2599,6 +2610,7 @@ p {
 
   .goods {
     padding-top: 40px;
+    padding-bottom: 75px;
   }
 
   .goods h2 {
@@ -2624,6 +2636,62 @@ p {
     padding-top: 20px;
     font-size: 17px;
     max-width: 230px;
+  }
+
+  .form {
+    background: none;
+    background-color: rgb(0, 179, 255);
+  }
+
+  .plane {
+    display: none;
+  }
+
+  .form-container {
+    padding: 45px 32px;
+    padding-bottom: 50px;
+  }
+
+  .form-wrapper {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .form-wrapper h3 {
+    margin-bottom: 7px;
+  }
+
+  .form-wrapper p {
+    margin-bottom: 24px;
+  }
+
+  .form__field-text textarea {
+    padding-top: 30px;
+  }
+
+  .form__submit {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+
+  .form__submit button {
+    margin-right: auto;
+    padding: 17px 71px 10px 71px;
+  }
+
+  .form-checkbox label {
+    margin-top: 10px;
+    margin-right: 53px;
+  }
+
+  .form-checkbox label + input::before {
+    top: 16px;
+    left: 20px;
+  }
+
+  .form-checkbox label + input::after {
+    top: 21px;
   }
 }
 
@@ -2716,6 +2784,16 @@ p {
     text-align: center;
     font-size: 14px;
     padding: 10px;
+  }
+
+  .form__submit {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: start;
   }
 }
 
@@ -2890,6 +2968,7 @@ p {
 
   .goods {
     padding-top: 32px;
+    padding-bottom: 83px;
   }
 
   .goods h2 {
@@ -2921,6 +3000,58 @@ p {
 
   .good-desc {
     display: block;
+  }
+
+  .form-container {
+    padding: 45px 8px;
+    padding-bottom: 88px;
+  }
+
+  .form-wrapper h3 {
+    font-size: 27px;
+    line-height: 43px;
+  }
+
+  .form-wrapper p {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 30px;
+  }
+
+  .form__field {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .form__field-text {
+    margin-bottom: 30px;
+  }
+
+  .form__field-text textarea {
+    padding-top: 25px;
+    height: 182px;
+  }
+
+  .form__submit button {
+    margin-top: -8px;
+    margin-bottom: 15px;
+  }
+
+  .form-checkbox label {
+    margin: 0;
+    margin-top: 10px;
+    margin-left: 30px;
+  }
+
+  .form-checkbox label + input::before {
+    left: 6px;
+  }
+
+  .form-checkbox label + input::after {
+    left: 10px;
   }
 }
 

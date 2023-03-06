@@ -1006,8 +1006,8 @@ button,
 }
 
 .modal-checkbox input {
-  width: 1px;
-  height: 1px;
+  width: 0;
+  height: 0;
 }
 
 .modal-checkbox input:checked::after {
@@ -1038,6 +1038,10 @@ button,
   height: 4px;
   border-top: 1px solid #ffffff;
   border-right: 1px solid #ffffff;
+}
+
+.modal-checkbox label + input:focus-visible::before {
+  border: 1px solid #000000;
 }
 
 .modal-user-phone {
@@ -2380,8 +2384,8 @@ p {
 }
 
 .form-checkbox input {
-  width: 1px;
-  height: 1px;
+  width: 0;
+  height: 0;
 }
 
 .form-checkbox input:checked::after {
@@ -2412,6 +2416,10 @@ p {
   height: 4px;
   border-top: 1px solid #ffffff;
   border-right: 1px solid #ffffff;
+}
+
+.form-checkbox label + input:focus-visible::before {
+  border: 1px solid #000000;
 }
 
 .form-user-name {

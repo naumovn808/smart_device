@@ -247,8 +247,8 @@
 }
 
 .modal-checkbox input {
-  width: 1px;
-  height: 1px;
+  width: 0;
+  height: 0;
 
   &:checked::after {
     content: "";
@@ -279,6 +279,10 @@
     height: 4px;
     border-top: 1px solid $color-default-white;
     border-right: 1px solid $color-default-white;
+  }
+
+  &:focus-visible::before {
+    border: 1px solid $color-default-black;
   }
 }
 

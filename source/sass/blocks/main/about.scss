@@ -161,6 +161,10 @@
     padding: 9px 37px;
     margin-left: 9px;
   }
+
+  &:hover {
+    opacity: 0.8;
+  }
 }
 
 .about__description.is-active {

@@ -46,37 +46,18 @@
   @include vp-767 {
     margin-right: 4px;
   }
-}
 
-.nav__logo--desc {
-  color: $color-white;
-  margin-left: 15px;
-
-  @media (max-width: 450px) {
-    display: none;
+  &:hover {
+    opacity: 0.8;
   }
 }
 
-.nav p {
-  margin: 0;
-  padding-top: 10px;
-  font-weight: 700;
-  font-size: 22px;
-  line-height: 20px;
-  color: $color-white;
-}
-
-.nav span {
-  margin: 0;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 14px;
-  color: rgba(255, 255, 255, 0.7);
-}
-
 .nav__list {
+  max-width: 710px;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
+  justify-content: space-between;
   flex-grow: 1;
   padding: 0 66px 10px 66px;
   margin: 0 10px;
@@ -93,11 +74,17 @@
   @include vp-374 {
     margin-top: 5px;
   }
+
+  & :hover {
+    opacity: 0.8;
+  }
 }
+
 
 .nav__list li {
   list-style: none;
   margin: 0 auto;
+  margin-bottom: 10px;
 }
 
 .nav__list span {

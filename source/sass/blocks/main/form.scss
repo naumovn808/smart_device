@@ -111,12 +111,18 @@
 
   &::placeholder {
     color: $color-default-white;
+    opacity: 0.7;
   }
 
   &:hover {
     background-color: rgba(1, 156, 223, 0.778);
   }
+
+  &:focus {
+    background-color: rgba(1, 156, 223, 0.778);
+  }
 }
+
 
 .form__field-text {
   margin-bottom: 27px;
@@ -141,9 +147,15 @@
 
   &::placeholder {
     color: $color-default-white;
+    opacity: 0.7;
   }
 
   &:hover {
+    border: none;
+    background-color: rgba(1, 156, 223, 0.778);
+  }
+
+  &:focus {
     border: none;
     background-color: rgba(1, 156, 223, 0.778);
   }
@@ -217,6 +229,8 @@
   color: $color-default-white;
   opacity: 0.6;
   margin-left: 40px;
+  user-select: none;
+  cursor: pointer;
 
   @include vp-767 {
     margin-top: 10px;
@@ -227,6 +241,10 @@
     margin: 0;
     margin-top: 10px;
     margin-left: 30px;
+  }
+
+  &:hover {
+    opacity: 1;
   }
 }
 
@@ -281,4 +299,13 @@
       left: 10px;
     }
   }
+}
+
+
+.form-user-name {
+  width: 100%;
+}
+
+.form-user-phone {
+  width: 100%;
 }

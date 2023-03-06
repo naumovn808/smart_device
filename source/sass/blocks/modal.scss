@@ -138,6 +138,15 @@
   font-size: 16px;
   line-height: 22px;
   color: $color-default-white;
+
+
+  &:hover {
+    background-color: rgba(1, 156, 223, 0.778);
+  }
+
+  &:focus {
+    background-color: rgba(1, 156, 223, 0.778);
+  }
 }
 
 .modal__wrapper input::placeholder {
@@ -147,6 +156,7 @@
   font-size: 16px;
   line-height: 22px;
   color: $color-default-white;
+  opacity: 0.7;
 }
 
 .modal__wrapper textarea {
@@ -162,6 +172,14 @@
   line-height: 22px;
   color: $color-default-white;
   height: 155px;
+
+  &:hover {
+    background-color: rgba(1, 156, 223, 0.778);
+  }
+
+  &:focus {
+    background-color: rgba(1, 156, 223, 0.778);
+  }
 }
 
 .modal__wrapper textarea::placeholder {
@@ -172,6 +190,7 @@
   font-size: 16px;
   line-height: 22px;
   color: $color-default-white;
+  opacity: 0.7;
 }
 
 
@@ -219,6 +238,12 @@
   color: $color-default-white;
   opacity: 0.8;
   margin-left: 16px;
+  user-select: none;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 1;
+  }
 }
 
 .modal-checkbox input {
@@ -255,4 +280,12 @@
     border-top: 1px solid $color-default-white;
     border-right: 1px solid $color-default-white;
   }
+}
+
+.modal-user-phone {
+  width: 100%;
+}
+
+.modal-user-name {
+  width: 100%;
 }

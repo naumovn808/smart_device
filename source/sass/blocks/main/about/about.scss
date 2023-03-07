@@ -17,45 +17,6 @@
   }
 }
 
-
-.year-picture {
-  position: absolute;
-  top: 57px;
-  left: -5%;
-  transform: rotate(270deg);
-
-  @include vp-767 {
-    top: 13%;
-    left: -5%;
-  }
-
-  @media (max-width: 650px) {
-    left: -12%;
-  }
-
-  @media (max-width: 500px) {
-    display: none;
-  }
-}
-
-.year-picture p {
-  letter-spacing: -8px;
-  font-weight: 700;
-  font-size: 155px;
-  line-height: 220px;
-  color: #00b35d;
-  display: inline;
-  background-image: url("/img/background-text.png");
-  background-size: cover;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-
-  @include vp-767 {
-    font-size: 152px;
-  }
-}
-
 .about__description {
   max-height: 240px;
   margin-left: 260px;

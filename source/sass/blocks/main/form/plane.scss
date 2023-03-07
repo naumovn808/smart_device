@@ -1,0 +1,9 @@
+.plane {
+  margin-top: 82px;
+  margin-left: -12px;
+  padding-right: 20px;
+
+  @include vp-767 {
+    display: none;
+  }
+}

@@ -1,15 +1,16 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
-import {footerAccordion, aboutAccordion, changeTitleText} from './modules/scripts.js';
+import {useFooterAccordion, useAboutAccordion, changeTitleText, changeArticleText} from './modules/scripts.js';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
   // Utils
   // ---------------------------------
-  footerAccordion();
-  aboutAccordion();
+  useAboutAccordion();
+  useFooterAccordion();
   changeTitleText();
+  changeArticleText();
 
   // accordion();
   iosVhFix();

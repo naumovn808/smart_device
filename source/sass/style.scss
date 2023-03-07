@@ -23,13 +23,21 @@
 @import "blocks/custom-input";
 @import "blocks/custom-toggle";
 @import "blocks/custom-select";
-@import "blocks/header.scss";
-@import "blocks/footer.scss";
-@import "blocks/main/general-block.scss";
-@import "blocks/main/advantages.scss";
-@import "blocks/main/about.scss";
+@import "blocks/header/header.scss";
+@import "blocks/header/nav.scss";
+@import "blocks/footer/footer.scss";
+@import "blocks/footer/social-links.scss";
+@import "blocks/footer/part.scss";
+@import "blocks/footer/our-ofice.scss";
+@import "blocks/main/general-block/general-block.scss";
+@import "blocks/main/general-block/article.scss";
+@import "blocks/main/advantages/advantages.scss";
+@import "blocks/main/advantages/card.scss";
+@import "blocks/main/about/about.scss";
+@import "blocks/main/about/year.scss";
 @import "blocks/main/goods.scss";
-@import "blocks/main/form.scss";
+@import "blocks/main/form/form.scss";
+@import "blocks/main/form/plane.scss";
 
 // ---------------------------------
 

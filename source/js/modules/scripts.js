@@ -1,4 +1,4 @@
-function footerAccordion() {
+function useFooterAccordion() {
 
   const btn = 'button[data-open-icon="plus"]';
   const part = document.querySelector('.part-wrapper');
@@ -35,7 +35,7 @@ function footerAccordion() {
 
 }
 
-function aboutAccordion() {
+function useAboutAccordion() {
 
   const btn = document.querySelector('button[data-about-open=""]');
   const list = document.querySelector('.about__description');
@@ -52,13 +52,31 @@ function aboutAccordion() {
 }
 
 function changeTitleText() {
+  const breakPoint = 374;
   const goods = document.querySelector('.goods');
-  const title = goods.querySelector('h2');
-  const newText = goods.querySelector('span');
+  if (goods) {
+    const title = goods.querySelector('h2');
+    const newText = goods.querySelector('span');
 
-  if (window.innerWidth <= 374) {
-    title.textContent = newText.textContent;
+    if (innerWidth <= breakPoint) {
+      title.textContent = newText.textContent;
+    }
   }
 }
 
-export {footerAccordion, aboutAccordion, changeTitleText};
+function changeArticleText() {
+  const breakPoint = 374;
+  const article = document.querySelector('.article');
+
+  if (article) {
+    const textLink = article.querySelector('a');
+    const newText = article.querySelector('span');
+
+    if (innerWidth <= breakPoint) {
+      textLink.textContent = newText.textContent;
+    }
+  }
+}
+
+
+export {useFooterAccordion, useAboutAccordion, changeTitleText, changeArticleText};

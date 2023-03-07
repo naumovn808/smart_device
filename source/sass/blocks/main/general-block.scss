@@ -12,7 +12,7 @@
 }
 
 .main-wrapper img {
-  background-color: black;
+  background-color: #000000;
   width: 1920px;
   height: 880px;
   object-fit: cover;
@@ -44,10 +44,15 @@
 
   @include vp-767 {
     padding: 0 20px;
-    top: 45.5%;
+    top: 46%;
     max-width: 655px;
     left: calc(100vw - 53%);
     width: 98%;
+  }
+
+  @media (max-width: 450px) {
+    left: calc(100vw - 55%);
+    width: 100%;
   }
 
   @include vp-374 {
@@ -57,12 +62,11 @@
     max-width: 285px;
     padding: 0 10px;
   }
-
 }
 
 .article h1 {
   display: block;
-  margin-bottom: 32px;
+  margin-bottom: 30px;
   font-weight: 700;
   font-size: 71px;
   line-height: 94px;
@@ -115,6 +119,7 @@
 }
 
 .article a {
+  padding: 17px 27px;
   background: $color-light-bue;
   font-weight: 700;
   font-size: 16px;
@@ -128,10 +133,10 @@
     font-size: 16px;
     line-height: 22px;
     margin-left: 43px;
-    margin-top: 11px;
+    margin-top: 8px;
   }
 
-  @media(max-width: 550px) {
+  @media (max-width: 550px) {
     display: none;
     margin-left: 0;
     max-width: 350px;
@@ -141,7 +146,7 @@
 .article .btn-mobile {
   display: none;
 
-  @media(max-width: 550px) {
+  @media (max-width: 550px) {
     display: block;
     text-align: center;
     font-size: 14px;

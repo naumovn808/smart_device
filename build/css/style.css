@@ -722,7 +722,12 @@ button,
   align-items: center;
   width: 100%;
   min-height: 100%;
-  padding: 60px 40px;
+  padding: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-bottom: 24px;
 }
 
 .modal__overlay {
@@ -736,12 +741,12 @@ button,
 
 .modal__content {
   position: relative;
-  background-color: #00B3FF;
+  background-color: #00b3ff;
   border-radius: 3px;
   max-width: 500px;
   padding: 40px;
   padding-bottom: 3px;
-  margin-top: 93px;
+  margin-top: 83px;
   margin-right: 34px;
 }
 
@@ -783,18 +788,6 @@ button,
   pointer-events: auto;
 }
 
-.modal__wrapper {
-  padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  margin-bottom: 24px;
-}
-
 .modal__wrapper input {
   background-color: #019bdf;
   border-radius: 3px;
@@ -811,11 +804,11 @@ button,
 }
 
 .modal__wrapper input:hover {
-  background-color: rgba(1, 156, 223, 0.778);
+  background-color: rgba(1, 156, 223, 0.78);
 }
 
 .modal__wrapper input:focus {
-  background-color: rgba(1, 156, 223, 0.778);
+  background-color: rgba(1, 156, 223, 0.78);
 }
 
 .modal__wrapper input::-webkit-input-placeholder {
@@ -884,11 +877,11 @@ button,
 }
 
 .modal__wrapper textarea:hover {
-  background-color: rgba(1, 156, 223, 0.778);
+  background-color: rgba(1, 156, 223, 0.78);
 }
 
 .modal__wrapper textarea:focus {
-  background-color: rgba(1, 156, 223, 0.778);
+  background-color: rgba(1, 156, 223, 0.78);
 }
 
 .modal__wrapper textarea::-webkit-input-placeholder {
@@ -955,8 +948,9 @@ button,
   -ms-flex-pack: center;
   justify-content: center;
   font-size: 18px;
-  padding: 14px 0;
-  margin-bottom: 12px;
+  padding: 12px 0;
+  margin-top: -5px;
+  margin-bottom: 18px;
 }
 
 .modal__content h3 {
@@ -1621,12 +1615,16 @@ button,
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
-  padding: 0 66px 10px 66px;
+  padding: 0 56px;
   margin: 0 10px;
 }
 
 .nav__list :hover {
   opacity: 0.8;
+}
+
+.nav__list svg {
+  margin-right: 10px;
 }
 
 .nav__list li {
@@ -1808,6 +1806,10 @@ p {
   margin-right: 34px;
 }
 
+.our-ofice h3 {
+  margin-top: 24px;
+}
+
 .our-ofice a {
   font-size: 16px;
   font-family: "pt_mono", "Arial", sans-serif;
@@ -1860,7 +1862,7 @@ p {
 }
 
 .main-wrapper img {
-  background-color: black;
+  background-color: #000000;
   width: 1920px;
   height: 880px;
   -o-object-fit: cover;
@@ -1881,7 +1883,7 @@ p {
 
 .article h1 {
   display: block;
-  margin-bottom: 32px;
+  margin-bottom: 30px;
   font-weight: 700;
   font-size: 71px;
   line-height: 94px;
@@ -1902,6 +1904,7 @@ p {
 }
 
 .article a {
+  padding: 17px 27px;
   background: #00b2ff;
   font-weight: 700;
   font-size: 16px;
@@ -1917,7 +1920,7 @@ p {
 }
 
 .advantages {
-  background-color: #F8FDFF;
+  background-color: #f8fdff;
 }
 
 .cards {
@@ -1937,7 +1940,7 @@ p {
   max-width: 595px;
   height: 100%;
   padding: 40px 42px;
-  border: 1px solid #EBEBEB;
+  border: 1px solid #ebebeb;
   -webkit-box-shadow: inset 5px 0 #00b2ff;
   box-shadow: inset 5px 0 #00b2ff;
   -webkit-transition: background-color, 0.5s;
@@ -1967,7 +1970,6 @@ p {
 
 .card h3 {
   margin-top: 14px;
-  margin-bottom: 10px;
   margin-bottom: 14px;
   font-weight: 400;
   font-size: 21px;
@@ -1985,7 +1987,7 @@ p {
 }
 
 .about {
-  background: #F8FDFF;
+  background: #f8fdff;
 }
 
 .about-wrapper {
@@ -2009,7 +2011,7 @@ p {
   font-weight: 700;
   font-size: 155px;
   line-height: 220px;
-  color: #00B35D;
+  color: #00b35d;
   display: inline;
   background-image: url("/img/background-text.png");
   background-size: cover;
@@ -2058,13 +2060,13 @@ p {
   margin-right: auto;
   margin-left: 260px;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 13px;
   line-height: 16px;
   text-align: center;
   text-transform: uppercase;
-  padding: 13px 49px;
-  color: #00B2FF;
-  border: 1px solid #00B2FF;
+  padding: 13px 50px;
+  color: #00b2ff;
+  border: 1px solid #00b2ff;
   border-radius: 3px;
 }
 
@@ -2103,7 +2105,7 @@ p {
 }
 
 .good-card img {
-  background-color: black;
+  background-color: #000000;
   -o-object-fit: cover;
   object-fit: cover;
   width: 100%;
@@ -2146,11 +2148,11 @@ p {
   width: 60px;
   height: 60px;
   background: #00b2ff;
-  border-radius: 3px 0px 0px 0px;
+  border-radius: 3px 0 0 0;
 }
 
-.good-card span:after {
-  content: "";
+.good-card span::after {
+  content: " ";
   position: absolute;
   bottom: 27px;
   right: 27px;
@@ -2262,11 +2264,11 @@ p {
 }
 
 .form__field input:hover {
-  background-color: rgba(1, 156, 223, 0.778);
+  background-color: rgba(1, 156, 223, 0.78);
 }
 
 .form__field input:focus {
-  background-color: rgba(1, 156, 223, 0.778);
+  background-color: rgba(1, 156, 223, 0.78);
 }
 
 .form__field-text {
@@ -2314,12 +2316,12 @@ p {
 
 .form__field-text textarea:hover {
   border: none;
-  background-color: rgba(1, 156, 223, 0.778);
+  background-color: rgba(1, 156, 223, 0.78);
 }
 
 .form__field-text textarea:focus {
   border: none;
-  background-color: rgba(1, 156, 223, 0.778);
+  background-color: rgba(1, 156, 223, 0.78);
 }
 
 .form__submit {
@@ -2665,6 +2667,14 @@ p {
 
   .nav__list {
     margin-bottom: 15px;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+  }
+
+  .nav__list li {
+    margin-right: 7px;
+    margin-left: 19px;
+    margin-bottom: 0;
   }
 
   .nav__list img {
@@ -2683,8 +2693,18 @@ p {
     padding: 0;
   }
 
+  .footer-wrapper {
+    padding: 50px 15px 20px 50px;
+  }
+
+  .social-links {
+    padding-right: 10px;
+  }
+
   .social-links li {
-    margin: 0;
+    margin-right: 0;
+    margin-left: 10px;
+    margin-bottom: 4px;
   }
 
   .social-links__list a {
@@ -2703,7 +2723,7 @@ p {
     border: none;
     padding: 30px;
     position: absolute;
-    top: 3px;
+    top: 7px;
     right: 14px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2715,7 +2735,7 @@ p {
     display: block;
     width: 15px;
     height: 1px;
-    background-color: #C4C4C4;
+    background-color: rgb(196, 196, 196) 0%, 77%;
     position: absolute;
     top: 7px;
     right: -7px;
@@ -2725,7 +2745,7 @@ p {
     cursor: pointer;
     width: 1px;
     height: 15px;
-    background-color: #C4C4C4;
+    background-color: rgb(196, 196, 196);
     position: absolute;
     top: 15px;
     right: 20px;
@@ -2735,7 +2755,7 @@ p {
   }
 
   .part-wrapper h3 {
-    font-size: 15px;
+    font-size: 13px;
   }
 
   .our-ofice div.is-active {
@@ -2763,7 +2783,7 @@ p {
     display: block;
     height: 1px;
     width: 15px;
-    background-color: #C4C4C4;
+    background-color: #c4c4c4;
     position: absolute;
     top: 7px;
     right: -7px;
@@ -2773,7 +2793,7 @@ p {
     cursor: pointer;
     width: 1px;
     height: 15px;
-    background-color: #C4C4C4;
+    background-color: #c4c4c4;
     position: absolute;
     top: 15px;
     right: 20px;
@@ -2789,7 +2809,7 @@ p {
 
   .article {
     padding: 0 20px;
-    top: 45.5%;
+    top: 46%;
     max-width: 655px;
     left: calc(100vw - 53%);
     width: 98%;
@@ -2809,7 +2829,7 @@ p {
     font-size: 16px;
     line-height: 22px;
     margin-left: 43px;
-    margin-top: 11px;
+    margin-top: 8px;
   }
 
   .cards {
@@ -2897,6 +2917,7 @@ p {
   .form {
     background: none;
     background-color: rgb(0, 179, 255);
+    padding-bottom: 75px;
   }
 
   .plane {
@@ -3067,6 +3088,13 @@ p {
   }
 }
 
+@media (max-width: 450px) {
+  .article {
+    left: calc(100vw - 55%);
+    width: 100%;
+  }
+}
+
 @media (max-width: 374px) {
   .header {
     margin-bottom: -70px;
@@ -3092,7 +3120,7 @@ p {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    padding: 30px 0 20px 0;
+    padding: 35px 0 20px 0;
   }
 
   .social-links {
@@ -3106,7 +3134,12 @@ p {
   }
 
   .social-links__list {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+    margin-left: 18px;
+  }
+
+  .social-links li {
+    margin: 0;
   }
 
   .social-links__list a {
@@ -3130,7 +3163,7 @@ p {
   .part-wrapper h3 {
     font-size: 13px;
     margin-bottom: 20px;
-    margin-top: 20px;
+    margin-top: 24px;
   }
 
   .our-ofice div {
@@ -3143,7 +3176,7 @@ p {
     max-width: 100%;
     margin-right: 0;
     position: relative;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
   }
 
   .our-ofice a {
@@ -3151,6 +3184,7 @@ p {
   }
 
   .our-ofice p {
+    padding-top: 11px;
     font-size: 14px;
     padding-bottom: 10px;
   }
@@ -3248,7 +3282,7 @@ p {
 
   .btn-about {
     margin-top: 15px;
-    padding: 9px 37px;
+    padding: 8px 41px;
     margin-left: 9px;
   }
 
@@ -3279,13 +3313,17 @@ p {
     height: 40px;
   }
 
-  .good-card span:after {
+  .good-card span::after {
     bottom: 17px;
     right: 17px;
   }
 
   .good-desc {
     display: block;
+  }
+
+  .form {
+    padding-bottom: 0;
   }
 
   .form-container {

@@ -13,7 +13,6 @@
   @include vp-374 {
     margin-bottom: -70px;
   }
-
 }
 
 .nav {
@@ -59,7 +58,7 @@
   align-items: center;
   justify-content: space-between;
   flex-grow: 1;
-  padding: 0 66px 10px 66px;
+  padding: 0 56px;
   margin: 0 10px;
 
   @include vp-1439 {
@@ -69,6 +68,7 @@
 
   @include vp-767 {
     margin-bottom: 15px;
+    flex-wrap: nowrap;
   }
 
   @include vp-374 {
@@ -80,11 +80,20 @@
   }
 }
 
+.nav__list svg {
+  margin-right: 10px;
+}
 
 .nav__list li {
   list-style: none;
   margin: 0 auto;
   margin-bottom: 10px;
+
+  @include vp-767 {
+    margin-right: 7px;
+    margin-left: 19px;
+    margin-bottom: 0;
+  }
 }
 
 .nav__list span {

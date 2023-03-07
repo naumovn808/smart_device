@@ -1,5 +1,5 @@
 .about {
-  background: #F8FDFF;
+  background: #f8fdff;
 }
 
 .about-wrapper {
@@ -29,11 +29,11 @@
     left: -5%;
   }
 
-  @media(max-width: 650px) {
+  @media (max-width: 650px) {
     left: -12%;
   }
 
-  @media(max-width: 500px) {
+  @media (max-width: 500px) {
     display: none;
   }
 }
@@ -43,7 +43,7 @@
   font-weight: 700;
   font-size: 155px;
   line-height: 220px;
-  color: #00B35D;
+  color: #00b35d;
   display: inline;
   background-image: url("/img/background-text.png");
   background-size: cover;
@@ -67,7 +67,7 @@
     max-height: 324px;
   }
 
-  @media(max-width: 500px) {
+  @media (max-width: 500px) {
     margin-left: 20px;
   }
 
@@ -139,26 +139,26 @@
   margin-right: auto;
   margin-left: 260px;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 13px;
   line-height: 16px;
   text-align: center;
   text-transform: uppercase;
-  padding: 13px 49px;
-  color: #00B2FF;
-  border: 1px solid #00B2FF;
+  padding: 13px 50px;
+  color: #00b2ff;
+  border: 1px solid #00b2ff;
   border-radius: 3px;
 
   @include vp-767 {
     margin-left: 206px;
   }
 
-  @media(max-width: 500px) {
+  @media (max-width: 500px) {
     margin-left: 20px;
   }
 
   @include vp-374 {
     margin-top: 15px;
-    padding: 9px 37px;
+    padding: 8px 41px;
     margin-left: 9px;
   }
 

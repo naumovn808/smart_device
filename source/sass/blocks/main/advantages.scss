@@ -1,5 +1,5 @@
 .advantages {
-  background-color: #F8FDFF;
+  background-color: #f8fdff;
 }
 
 .cards {
@@ -23,7 +23,7 @@
     padding: 80px 50px 78px 50px;
   }
 
-  @media (max-width:600px) {
+  @media (max-width: 600px) {
     grid-template-columns: 1fr;
     padding: 50px 25px;
   }
@@ -38,7 +38,7 @@
   max-width: 595px;
   height: 100%;
   padding: 40px 42px;
-  border: 1px solid #EBEBEB;
+  border: 1px solid #ebebeb;
   box-shadow: inset 5px 0 $color-light-bue;
   transition: background-color, 0.5s;
 
@@ -90,7 +90,6 @@
 
 .card h3 {
   margin-top: 14px;
-  margin-bottom: 10px;
   margin-bottom: 14px;
   font-weight: 400;
   font-size: 21px;

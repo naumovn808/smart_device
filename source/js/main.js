@@ -10,6 +10,7 @@ window.addEventListener('DOMContentLoaded', () => {
   footerAccordion();
   aboutAccordion();
   changeTitleText();
+
   // accordion();
   iosVhFix();
 
@@ -22,6 +23,7 @@ window.addEventListener('DOMContentLoaded', () => {
     initModals();
     const form = new Form();
     window.form = form;
+    form.init();
   });
 });
 

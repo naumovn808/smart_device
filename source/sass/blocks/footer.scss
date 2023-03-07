@@ -30,13 +30,14 @@
     padding: 47px 0 20px 26px;
   }
 
-
-  @include vp-767 {}
+  @include vp-767 {
+    padding: 50px 15px 20px 50px;
+  }
 
   @include vp-374 {
     display: flex;
     flex-direction: column;
-    padding: 30px 0 20px 0;
+    padding: 35px 0 20px 0;
   }
 }
 
@@ -82,6 +83,10 @@ p {
     margin: 0;
   }
 
+  @include vp-767 {
+    padding-right: 10px;
+  }
+
   @include vp-374 {
     display: flex;
     flex-direction: column;
@@ -99,7 +104,6 @@ p {
 }
 
 .footer__logo {
-
   &:hover {
     opacity: 0.8;
   }
@@ -111,7 +115,8 @@ p {
   margin: 0 7px;
 
   @include vp-374 {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+    margin-left: 18px;
   }
 }
 
@@ -119,6 +124,12 @@ p {
   margin: 0 19px 0 7px;
 
   @include vp-767 {
+    margin-right: 0;
+    margin-left: 10px;
+    margin-bottom: 4px;
+  }
+
+  @include vp-374 {
     margin: 0;
   }
 
@@ -195,11 +206,9 @@ p {
     position: relative;
     margin-right: 0;
   }
-
 }
 
 .part-wrapper div {
-
   @include vp-374 {
     display: none;
   }
@@ -220,23 +229,22 @@ p {
     border: none;
     padding: 30px;
     position: absolute;
-    top: 3px;
+    top: 7px;
     right: 14px;
     display: flex;
   }
 }
 
-.part-wrapper button>span {
+.part-wrapper button > span {
   display: none;
 
   &::after {
-
     @include vp-767 {
       content: "";
       display: block;
       width: 15px;
       height: 1px;
-      background-color: #C4C4C4;
+      background-color: rgb(196, 196, 196) 0%, 77%;
       position: absolute;
       top: 7px;
       right: -7px;
@@ -247,7 +255,7 @@ p {
     cursor: pointer;
     width: 1px;
     height: 15px;
-    background-color: #C4C4C4;
+    background-color: rgb(196, 196, 196);
     position: absolute;
     top: 15px;
     right: 20px;
@@ -255,7 +263,7 @@ p {
   }
 }
 
-.part-wrapper button>span.is-close {
+.part-wrapper button > span.is-close {
   width: 0;
 }
 
@@ -272,19 +280,17 @@ p {
   }
 
   @include vp-767 {
-    font-size: 15px;
+    font-size: 13px;
   }
 
   @include vp-374 {
     font-size: 13px;
     margin-bottom: 20px;
-    margin-top: 20px;
+    margin-top: 24px;
   }
-
 }
 
 .our-ofice div {
-
   @include vp-374 {
     display: none;
   }
@@ -313,8 +319,12 @@ p {
     max-width: 100%;
     margin-right: 0;
     position: relative;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
   }
+}
+
+.our-ofice h3 {
+  margin-top: 24px;
 }
 
 .our-ofice a {
@@ -347,6 +357,7 @@ p {
   line-height: 18px;
 
   @include vp-374 {
+    padding-top: 11px;
     font-size: 14px;
     padding-bottom: 10px;
   }
@@ -368,17 +379,16 @@ p {
   }
 }
 
-.our-ofice button>span {
+.our-ofice button > span {
   display: none;
 
   &::after {
-
     @include vp-767 {
       content: "";
       display: block;
       height: 1px;
       width: 15px;
-      background-color: #C4C4C4;
+      background-color: #c4c4c4;
       position: absolute;
       top: 7px;
       right: -7px;
@@ -389,7 +399,7 @@ p {
     cursor: pointer;
     width: 1px;
     height: 15px;
-    background-color: #C4C4C4;
+    background-color: #c4c4c4;
     position: absolute;
     top: 15px;
     right: 20px;
@@ -397,6 +407,6 @@ p {
   }
 }
 
-.our-ofice button>span.is-close {
+.our-ofice button > span.is-close {
   width: 0;
 }

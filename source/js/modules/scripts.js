@@ -62,4 +62,3 @@ function changeTitleText() {
 }
 
 export {footerAccordion, aboutAccordion, changeTitleText};
-

@@ -64,19 +64,4 @@ function changeTitleText() {
   }
 }
 
-function changeArticleText() {
-  const breakPoint = 374;
-  const article = document.querySelector('.article');
-
-  if (article) {
-    const textLink = article.querySelector('a');
-    const newText = article.querySelector('span');
-
-    if (innerWidth <= breakPoint) {
-      textLink.textContent = newText.textContent;
-    }
-  }
-}
-
-
-export {useFooterAccordion, useAboutAccordion, changeTitleText, changeArticleText};
+export {useFooterAccordion, useAboutAccordion, changeTitleText};

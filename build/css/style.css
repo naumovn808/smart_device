@@ -1615,8 +1615,8 @@ button,
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
-  padding: 0 56px;
-  margin: 0 10px;
+  padding: 0 56px 0 40px;
+  margin: 0 18px;
 }
 
 .nav__list :hover {
@@ -1624,6 +1624,7 @@ button,
 }
 
 .nav__list svg {
+  margin-left: 20px;
   margin-right: 10px;
 }
 
@@ -1634,8 +1635,9 @@ button,
 }
 
 .nav__list span {
+  margin-left: 10px;
   font-family: "pt_mono", "Arial", sans-serif;
-  font-size: 16px;
+  font-size: 17px;
   line-height: 18px;
   color: #f2f5f7;
   font-weight: 400;
@@ -1649,10 +1651,10 @@ button,
   display: block;
   cursor: pointer;
   background: none;
-  padding: 10px 13px;
+  padding: 11px 15px;
   font-family: "roboto", "Arial", sans-serif;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 13px;
   line-height: 16px;
   text-align: center;
   text-transform: uppercase;
@@ -1675,7 +1677,7 @@ button,
   max-width: 1340px;
   width: 100%;
   margin: 0 auto;
-  padding: 42px 60px 20px 60px;
+  padding: 42px 64px 50px 60px;
 }
 
 .footer-wrapper li {
@@ -1694,14 +1696,14 @@ button,
   line-height: 16px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  margin-bottom: 4px;
+  margin-bottom: 5px;
 }
 
 .footer-wrapper a,
 p {
   color: rgba(255, 255, 255, 0.7);
   font-weight: 400;
-  font-size: 16px;
+  font-size: 17px;
   line-height: 135%;
 }
 
@@ -1807,11 +1809,11 @@ p {
 }
 
 .our-ofice h3 {
-  margin-top: 24px;
+  margin-top: 15px;
 }
 
 .our-ofice a {
-  font-size: 16px;
+  font-size: 17px;
   font-family: "pt_mono", "Arial", sans-serif;
   font-weight: 400;
 }
@@ -1826,9 +1828,9 @@ p {
 }
 
 .our-ofice p {
-  font-size: 16px;
+  font-size: 17px;
   font-family: "pt_mono", "Arial", sans-serif;
-  margin-bottom: 0;
+  margin-bottom: 11px;
   margin-top: 0;
   padding-top: 22px;
   line-height: 18px;
@@ -1887,36 +1889,47 @@ p {
 
 .article h1 {
   display: block;
+  margin-top: 52px;
   margin-bottom: 30px;
   font-weight: 700;
-  font-size: 71px;
+  font-size: 74px;
   line-height: 94px;
-  letter-spacing: 0.07em;
   text-transform: uppercase;
   color: #f2f5f7;
 }
 
 .article p {
+  margin-top: 28px;
   display: block;
   margin-bottom: 46px;
   max-width: 680px;
   font-family: "pt_mono", "Arial", sans-serif;
   font-weight: 400;
-  font-size: 22px;
-  line-height: 155%;
+  font-size: 26px;
+  line-height: 138%;
   color: #f2f5f7;
 }
 
 .article a {
-  padding: 17px 27px;
+  display: inline-block;
   background: #00b2ff;
+  border-radius: 3px;
+  padding: 16px 19px;
+}
+
+.article__desktop {
+  text-align: center;
+  color: #f2f5f7;
   font-weight: 700;
   font-size: 16px;
   line-height: 21px;
-  text-align: center;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.03em;
+  padding: 5px;
   text-transform: uppercase;
-  color: #f2f5f7;
+}
+
+.article__mobile {
+  display: none;
 }
 
 .advantages {
@@ -2041,7 +2054,7 @@ p {
   line-height: 16px;
   text-align: center;
   text-transform: uppercase;
-  padding: 13px 50px;
+  padding: 13px 47px;
   color: #00b2ff;
   border: 1px solid #00b2ff;
   border-radius: 3px;
@@ -2214,8 +2227,8 @@ p {
 }
 
 .form-wrapper p {
-  margin-top: 0;
-  margin-bottom: 38px;
+  margin-top: 13px;
+  margin-bottom: 34px;
   font-family: "pt_mono", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -2351,13 +2364,13 @@ p {
 .form__submit button {
   font-family: "pt_mono", "Arial", sans-serif;
   font-weight: 700;
-  font-size: 15px;
+  font-size: 14px;
   line-height: 19px;
   text-align: center;
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #ffffff;
-  padding: 13px 71px;
+  padding: 13px 68px;
 }
 
 .form-checkbox {
@@ -2679,9 +2692,13 @@ p {
   }
 
   .nav__list {
-    margin-bottom: 15px;
+    margin: 0 10px 15px 10px;
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
+  }
+
+  .nav__list svg {
+    margin-left: 0;
   }
 
   .nav__list li {
@@ -2829,19 +2846,28 @@ p {
   }
 
   .article h1 {
-    font-size: 57px;
+    margin-top: 37px;
+    font-size: 59px;
     line-height: 57px;
     margin-bottom: 10px;
   }
 
   .article p {
     font-size: 22px;
+    line-height: 160%;
+    word-spacing: 16px;
+    margin-bottom: 53px;
   }
 
   .article a {
+    padding: 16px 15px 16px 0;
+    margin-left: 42px;
+  }
+
+  .article__desktop {
     font-size: 16px;
     line-height: 22px;
-    margin-left: 43px;
+    margin-left: 22px;
     margin-top: 8px;
   }
 
@@ -2852,6 +2878,7 @@ p {
   .card {
     padding-right: 40px;
     padding-bottom: 30px;
+    padding-left: 44px;
     min-height: 360px;
   }
 
@@ -2948,6 +2975,7 @@ p {
   }
 
   .form-wrapper p {
+    margin-top: 6px;
     margin-bottom: 24px;
   }
 
@@ -3063,7 +3091,7 @@ p {
 }
 
 @media (max-width: 550px) {
-  .article a {
+  .article__desktop {
     margin-left: 0;
     max-width: 350px;
   }
@@ -3184,6 +3212,10 @@ p {
     padding-bottom: 5px;
   }
 
+  .our-ofice h3 {
+    margin-top: 19px;
+  }
+
   .our-ofice a {
     font-size: 14px;
   }
@@ -3200,10 +3232,10 @@ p {
   }
 
   .article {
-    top: 44.5%;
-    left: calc(100vw - 51%);
+    top: 43%;
+    left: calc(100vw - 50%);
     margin: 0;
-    max-width: 285px;
+    max-width: 300px;
     padding: 0 10px;
   }
 
@@ -3215,13 +3247,31 @@ p {
 
   .article p {
     max-width: 300px;
-    font-size: 14px;
+    font-size: 16px;
     margin-bottom: 44px;
+    word-spacing: normal;
+    line-height: 140%;
   }
 
   .article a {
-    margin-top: 0;
+    text-align: center;
+    padding: 10px 45px;
+    margin: 0;
+    margin-left: 5px;
+  }
+
+  .article__desktop {
+    display: none;
+  }
+
+  .article__mobile {
     font-size: 12px;
+    line-height: 22px;
+    text-align: center;
+    color: #f2f5f7;
+    display: block;
+    margin-top: 0;
+    text-transform: uppercase;
     max-width: 265px;
   }
 
@@ -3342,9 +3392,9 @@ p {
   }
 
   .form-wrapper p {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 34px;
   }
 
   .form__field {
@@ -3367,6 +3417,7 @@ p {
   .form__submit button {
     margin-top: -8px;
     margin-bottom: 15px;
+    padding: 17px 70px 10px 70px;
   }
 
   .form-checkbox label {

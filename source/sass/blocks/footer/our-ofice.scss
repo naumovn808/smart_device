@@ -1,5 +1,5 @@
 .our-ofice div {
-  @include vp-374 {
+  @media (max-width: 500px) {
     display: none;
   }
 }
@@ -21,7 +21,7 @@
     margin-left: 0;
   }
 
-  @include vp-374 {
+  @media (max-width: 500px) {
     padding: 0 25px;
     border-bottom: 1px solid rgba(248, 253, 255, 0.7);
     max-width: 100%;
@@ -34,7 +34,7 @@
 .our-ofice h3 {
   margin-top: 15px;
 
-  @include vp-374 {
+  @media (max-width: 500px) {
     margin-top: 19px;
   }
 }
@@ -44,7 +44,7 @@
   font-family: $ff-pt_mono;
   font-weight: 400;
 
-  @include vp-374 {
+  @media (max-width: 500px) {
     font-size: 14px;
   }
 }
@@ -68,7 +68,7 @@
   padding-top: 22px;
   line-height: 18px;
 
-  @include vp-374 {
+  @media (max-width: 500px) {
     padding-top: 11px;
     font-size: 14px;
     padding-bottom: 10px;

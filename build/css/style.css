@@ -2084,7 +2084,7 @@ p {
   line-height: 220px;
   color: #00b35d;
   display: inline;
-  background-image: url("/img/background-text.png");
+  background-image: url("../img/background-text.png");
   background-size: cover;
   -webkit-background-clip: text;
   background-clip: text;
@@ -3091,6 +3091,17 @@ p {
 }
 
 @media (max-width: 550px) {
+  .article a {
+    margin-left: 0;
+    padding: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
   .article__desktop {
     margin-left: 0;
     max-width: 350px;
@@ -3108,43 +3119,6 @@ p {
 }
 
 @media (max-width: 500px) {
-  .about__description {
-    margin-left: 20px;
-  }
-
-  .btn-about {
-    margin-left: 20px;
-  }
-
-  .year-picture {
-    display: none;
-  }
-}
-
-@media (max-width: 450px) {
-  .article {
-    left: calc(100vw - 55%);
-    width: 100%;
-  }
-}
-
-@media (max-width: 374px) {
-  .header {
-    margin-bottom: -70px;
-  }
-
-  .nav {
-    padding: 14px 0 17px 10px;
-  }
-
-  .nav__list {
-    margin-top: 5px;
-  }
-
-  .nav__list img {
-    margin-left: 20px;
-  }
-
   .footer-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3226,6 +3200,43 @@ p {
     padding-bottom: 10px;
   }
 
+  .about__description {
+    margin-left: 20px;
+  }
+
+  .btn-about {
+    margin-left: 20px;
+  }
+
+  .year-picture {
+    display: none;
+  }
+}
+
+@media (max-width: 450px) {
+  .article {
+    left: calc(100vw - 55%);
+    width: 100%;
+  }
+}
+
+@media (max-width: 374px) {
+  .header {
+    margin-bottom: -70px;
+  }
+
+  .nav {
+    padding: 14px 0 17px 10px;
+  }
+
+  .nav__list {
+    margin-top: 5px;
+  }
+
+  .nav__list img {
+    margin-left: 20px;
+  }
+
   .main-wrapper img {
     width: 374px;
     height: 560px;
@@ -3233,7 +3244,6 @@ p {
 
   .article {
     top: 43%;
-    left: calc(100vw - 50%);
     margin: 0;
     max-width: 300px;
     padding: 0 10px;
@@ -3257,7 +3267,6 @@ p {
     text-align: center;
     padding: 10px 45px;
     margin: 0;
-    margin-left: 5px;
   }
 
   .article__desktop {

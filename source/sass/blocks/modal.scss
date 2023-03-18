@@ -11,7 +11,7 @@
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
 
-  background-color: rgba($color-default-black, 0.8);
+  background-color: rgba(3, 16, 27, 0.7);
   transform: scale(1.2);
   visibility: hidden;
   opacity: 0;
@@ -116,13 +116,6 @@
   }
 }
 
-// .modal__wrapper {
-//   padding: 0;
-//   display: flex;
-//   flex-direction: column;
-//   margin-bottom: 24px;
-// }
-
 .modal__wrapper input {
   background-color: #019bdf;
   border-radius: 3px;
@@ -159,7 +152,7 @@
 .modal__wrapper textarea {
   background-color: #019bdf;
   border-radius: 3px;
-  margin-bottom: 20px;
+  margin-bottom: 23px;
   padding: 20px 15px;
   border: none;
   width: 100%;
@@ -191,11 +184,11 @@
 }
 
 .modal__btn {
-  width: 100%;
+  width: 420px;
   display: flex;
   justify-content: center;
   font-size: 18px;
-  padding: 12px 0;
+  padding: 11px 0;
   margin-top: -5px;
   margin-bottom: 18px;
 }
@@ -204,12 +197,13 @@
   margin-top: 20px;
   text-align: left;
   font-weight: 400;
-  font-size: 27px;
+  font-size: 28px;
   line-height: 0;
   color: $color-default-white;
 }
 
 .modal__content p {
+  letter-spacing: 1.5px;
   margin-bottom: 38px;
   width: 90%;
   margin-top: -2px;
@@ -234,7 +228,8 @@
   line-height: 16px;
   color: $color-default-white;
   opacity: 0.8;
-  margin-left: 16px;
+  margin-left: 33px;
+  letter-spacing: 1.3px;
   user-select: none;
   cursor: pointer;
 
@@ -256,7 +251,7 @@
   &::before {
     position: absolute;
     top: 5px;
-    left: -10px;
+    left: 8px;
     content: "";
     display: block;
     width: 15px;
@@ -269,7 +264,7 @@
     display: block;
     position: absolute;
     top: 10px;
-    left: -6px;
+    left: 12px;
     transform: rotate(130deg);
     width: 6px;
     height: 4px;
@@ -288,4 +283,9 @@
 
 .modal-user-name {
   width: 100%;
+}
+
+.modal-submit {
+  display: flex;
+  flex-direction: column-reverse;
 }

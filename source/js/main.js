@@ -4,6 +4,10 @@ import {Form} from './modules/form-validate/form';
 import {useFooterAccordion, useAboutAccordion, changeTitleText} from './modules/scripts.js';
 // ---------------------------------
 
+setTimeout(() => {
+  document.getElementById('modal-user-name').focus();
+}, 500);
+
 window.addEventListener('DOMContentLoaded', () => {
   // Utils
   // ---------------------------------

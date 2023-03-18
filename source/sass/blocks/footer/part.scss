@@ -31,7 +31,7 @@
 .part-wrapper {
   font-family: $ff-pt_mono;
   margin-left: auto;
-  margin-right: 30px;
+  margin-right: 23px;
 
   @include vp-1023 {
     grid-area: part;
@@ -39,7 +39,7 @@
     margin-right: 20px;
   }
 
-  @media (max-width: 500px) {
+  @media (max-width: 550px) {
     padding: 0 25px;
     border-top: 1px solid rgba(248, 253, 255, 0.7);
     border-bottom: 1px solid rgba(248, 253, 255, 0.7);
@@ -49,13 +49,13 @@
 }
 
 .part-wrapper div {
-  @media (max-width: 500px) {
+  @media (max-width: 550px) {
     display: none;
   }
 }
 
 .part-wrapper div.is-active {
-  @include vp-767 {
+  @include vp-1023 {
     display: flex;
   }
 }
@@ -63,7 +63,7 @@
 .part-wrapper button {
   display: none;
 
-  @include vp-767 {
+  @include vp-1023 {
     cursor: pointer;
     background: none;
     border: none;
@@ -79,7 +79,7 @@
   display: none;
 
   &::after {
-    @include vp-767 {
+    @include vp-1023 {
       content: "";
       display: block;
       width: 15px;
@@ -91,7 +91,7 @@
     }
   }
 
-  @include vp-767 {
+  @include vp-1023 {
     cursor: pointer;
     width: 1px;
     height: 15px;
@@ -117,13 +117,10 @@
 
   @include vp-1023 {
     margin-left: 0;
-  }
-
-  @include vp-767 {
     font-size: 13px;
   }
 
-  @media (max-width: 500px) {
+  @media (max-width: 550px) {
     font-size: 13px;
     margin-bottom: 20px;
     margin-top: 24px;

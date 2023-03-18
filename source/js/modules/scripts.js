@@ -52,16 +52,20 @@ function useAboutAccordion() {
 }
 
 function changeTitleText() {
-  const breakPoint = 374;
-  const goods = document.querySelector('.goods');
-  if (goods) {
-    const title = goods.querySelector('h2');
-    const newText = goods.querySelector('span');
 
-    if (innerWidth <= breakPoint) {
-      title.textContent = newText.textContent;
+  window.addEventListener('resize', () => {
+    const breakPoint = 374;
+    const goods = document.querySelector('.goods');
+    if (goods) {
+      const title = goods.querySelector('h2');
+      const newText = goods.querySelector('span');
+
+      if (innerWidth <= breakPoint) {
+        title.textContent = newText.textContent;
+      }
     }
-  }
+  });
+
 }
 
 export {useFooterAccordion, useAboutAccordion, changeTitleText};

@@ -1,18 +1,10 @@
-.about {
-  background: #f8fdff;
-}
-
 .about-wrapper {
   position: relative;
   max-width: 1240px;
   margin: 0 auto;
   padding-bottom: 121px;
 
-  @include vp-767 {
-    padding-bottom: 78px;
-  }
-
-  @include vp-374 {
+  @include vp-1023 {
     padding-bottom: 81px;
   }
 }
@@ -22,8 +14,8 @@
   margin-left: 260px;
   overflow: hidden;
 
-  @include vp-767 {
-    margin-left: 210px;
+  @include vp-1023 {
+    margin-left: 200px;
     margin-right: 30px;
     max-height: 324px;
   }
@@ -44,7 +36,7 @@
   margin-bottom: 50px;
 
 
-  @include vp-767 {
+  @include vp-1023 {
     margin-top: 0;
   }
 
@@ -79,7 +71,7 @@
   line-height: 22px;
   color: #041827;
 
-  @include vp-767 {
+  @include vp-1023 {
     margin-top: 0;
     line-height: 21px;
     margin-bottom: 24px;
@@ -95,6 +87,7 @@
 
 .btn-about {
   margin-top: 16px;
+  background-color: #f8fdff;
   cursor: pointer;
   display: block;
   margin-right: auto;
@@ -105,11 +98,11 @@
   text-align: center;
   text-transform: uppercase;
   padding: 13px 47px;
-  color: #00b2ff;
-  border: 1px solid #00b2ff;
+  color: $color-light-bue;
+  border: 1px solid $color-light-bue;
   border-radius: 3px;
 
-  @include vp-767 {
+  @include vp-1023 {
     margin-left: 206px;
   }
 
@@ -124,7 +117,7 @@
   }
 
   &:hover {
-    opacity: 0.8;
+    background-color: #e6eff479;
   }
 }
 

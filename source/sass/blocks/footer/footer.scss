@@ -1,13 +1,13 @@
 .footer {
   background-color: $color-dark;
 
-  @include vp-767 {
+  @include vp-1023 {
     padding: 0;
   }
 }
 
 .footer .container {
-  @include vp-767 {
+  @include vp-1023 {
     padding: 0;
   }
 }
@@ -27,14 +27,10 @@
   }
 
   @include vp-1023 {
-    padding: 47px 0 20px 26px;
-  }
-
-  @include vp-767 {
     padding: 50px 15px 20px 50px;
   }
 
-  @media (max-width: 500px) {
+  @media (max-width: 550px) {
     display: flex;
     flex-direction: column;
     padding: 35px 0 20px 0;
@@ -44,7 +40,7 @@
 
 .footer-wrapper li {
   list-style: none;
-  margin-bottom: 8px;
+  margin-bottom: 7px;
 }
 
 .footer-wrapper ul {
@@ -67,6 +63,7 @@ p {
   font-weight: 400;
   font-size: 17px;
   line-height: 135%;
+  letter-spacing: 0.5px;
 }
 
 .footer__logo {

@@ -4,7 +4,7 @@
   @include vp-1023 {
     background: none;
     background-color: rgb(0, 179, 255);
-    padding-bottom: 70px;
+    padding-bottom: 72px;
   }
 
   @include vp-374 {
@@ -24,7 +24,7 @@
   }
 
   @include vp-374 {
-    padding: 45px 8px;
+    padding: 42px 8px;
     padding-bottom: 88px;
   }
 }
@@ -53,6 +53,8 @@
   }
 
   @include vp-374 {
+    margin-top: 4px;
+    margin-bottom: 0;
     font-size: 27px;
     line-height: 43px;
   }
@@ -77,7 +79,7 @@
   @include vp-374 {
     font-size: 16px;
     line-height: 20px;
-    margin-bottom: 34px;
+    margin-bottom: 32px;
   }
 }
 
@@ -122,6 +124,10 @@
 
 .form__field-text {
   margin-bottom: 26px;
+
+  @include vp-1023 {
+    margin-bottom: 28px;
+  }
 
   @include vp-374 {
     margin-bottom: 20px;
@@ -199,6 +205,7 @@
 
   @include vp-1023 {
     margin-right: 60px;
+    padding: 16px 25px 10px 25px;
   }
 
   @media (max-width: 550px) {
@@ -264,7 +271,7 @@
   }
 }
 
-.form-checkbox label + input {
+.form-checkbox label+input {
   position: relative;
 
   &::before {

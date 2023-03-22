@@ -20,13 +20,15 @@
   }
 
   @include vp-1023 {
-    left: calc(100vw - 48%);
-    top: 43%;
+    left: calc(100vw - 52%);
+    top: 46%;
     margin: 0;
     padding: 0 10px;
   }
 
   @include vp-374 {
+    top: 43%;
+    left: calc(100vw - 48%);
     max-width: 300px;
   }
 }
@@ -79,8 +81,8 @@
   @include vp-1023 {
     font-size: 22px;
     line-height: 160%;
-    word-spacing: 3px;
-    letter-spacing: 1.8px;
+    word-spacing: 8px;
+    letter-spacing: 1px;
     margin-bottom: 53px;
   }
 
@@ -88,7 +90,7 @@
     max-width: 300px;
     font-size: 13px;
     margin-bottom: 44px;
-    word-spacing: normal;
+    word-spacing: 6px;
     line-height: 180%;
   }
 }
@@ -101,7 +103,7 @@
 
   @include vp-1023 {
     padding: 16px 20px 15px 0;
-    margin-left: 48px;
+    margin-left: 42px;
   }
 
   @media (max-width: 550px) {

@@ -942,7 +942,6 @@ button,
 }
 
 .modal__btn {
-  width: 100%;
   width: 420px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1578,7 +1577,7 @@ button,
 
 .header {
   position: fixed;
-  z-index: 2;
+  z-index: 3;
   width: 100%;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(84.9%, #041827), to(rgba(4, 24, 39, 0)));
   background: -o-linear-gradient(top, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
@@ -1865,6 +1864,7 @@ p {
   position: relative;
   width: 100%;
   background-color: #041827;
+  margin-bottom: 120px;
 }
 
 .main-wrapper::after {
@@ -1944,7 +1944,7 @@ p {
 }
 
 .container.cards {
-  padding: 0 48px 0 50px;
+  padding: 0 48px 0 42px;
 }
 
 .cards {
@@ -1957,6 +1957,7 @@ p {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  margin-bottom: 120px;
 }
 
 .card {
@@ -2014,7 +2015,7 @@ p {
   position: relative;
   max-width: 1240px;
   margin: 0 auto;
-  padding-bottom: 121px;
+  padding-bottom: 120px;
 }
 
 .about__description {
@@ -2052,7 +2053,7 @@ p {
 
 .btn-about {
   margin-top: 16px;
-  background-color: #F8FDFF;
+  background-color: #f8fdff;
   cursor: pointer;
   display: block;
   margin-right: auto;
@@ -2063,7 +2064,7 @@ p {
   text-align: center;
   text-transform: uppercase;
   padding: 13px 47px;
-  color: #00B2FF;
+  color: #00b2ff;
   border: 1px solid #00b2ff;
   border-radius: 3px;
 }
@@ -2116,6 +2117,14 @@ p {
   margin-bottom: 53px;
 }
 
+.goods-title__desctop {
+  display: block;
+}
+
+.goods-title__mobile {
+  display: none;
+}
+
 .good-card {
   display: block;
   position: relative;
@@ -2159,7 +2168,7 @@ p {
 }
 
 .good-card__des {
-  z-index: 10;
+  z-index: 2;
   position: absolute;
   top: 0;
   left: 0;
@@ -2531,6 +2540,7 @@ p {
     -webkit-box-flex: 0;
     -ms-flex-positive: 0;
     flex-grow: 0;
+    margin: 0;
   }
 
   .cards {
@@ -2541,12 +2551,12 @@ p {
 }
 
 @media (max-width: 1223px) {
-  .nav__list span {
-    display: none;
+  .nav a {
+    margin-right: 0;
   }
 
   .nav button {
-    margin-right: 30px;
+    margin-right: 20px;
   }
 
   .part-site {
@@ -2630,8 +2640,8 @@ p {
     margin-bottom: 0;
   }
 
-  .nav__list img {
-    margin: 0 15px;
+  .nav__list span {
+    display: none;
   }
 
   .nav__list img {
@@ -2777,7 +2787,7 @@ p {
 
   .our-ofice p {
     word-spacing: 1px;
-    letter-spacing: 0px;
+    letter-spacing: 0;
   }
 
   .our-ofice button {
@@ -2837,8 +2847,8 @@ p {
   }
 
   .article {
-    left: calc(100vw - 48%);
-    top: 43%;
+    left: calc(100vw - 52%);
+    top: 46%;
     margin: 0;
     padding: 0 10px;
   }
@@ -2853,14 +2863,14 @@ p {
   .article p {
     font-size: 22px;
     line-height: 160%;
-    word-spacing: 3px;
-    letter-spacing: 1.8px;
+    word-spacing: 8px;
+    letter-spacing: 1px;
     margin-bottom: 53px;
   }
 
   .article a {
     padding: 16px 20px 15px 0;
-    margin-left: 48px;
+    margin-left: 42px;
   }
 
   .article__desktop {
@@ -2893,7 +2903,7 @@ p {
   }
 
   .about-wrapper {
-    padding-bottom: 81px;
+    padding-bottom: 80px;
   }
 
   .about__description {
@@ -2958,7 +2968,7 @@ p {
   .form {
     background: none;
     background-color: rgb(0, 179, 255);
-    padding-bottom: 70px;
+    padding-bottom: 72px;
   }
 
   .form-container {
@@ -2979,6 +2989,10 @@ p {
     margin-bottom: 24px;
   }
 
+  .form__field-text {
+    margin-bottom: 28px;
+  }
+
   .form__field-text textarea {
     padding-top: 30px;
     padding-left: 15px;
@@ -2986,6 +3000,7 @@ p {
 
   .form__submit button {
     margin-right: 60px;
+    padding: 16px 25px 10px 25px;
   }
 
   .form-checkbox {
@@ -3040,8 +3055,83 @@ p {
     margin-right: 4px;
   }
 
+  .footer-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 35px 0 20px 0;
+  }
+
+  .social-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-right: 5px;
+  }
+
   .social-links a {
     margin-bottom: 10px;
+  }
+
+  .social-links__list {
+    margin-bottom: 0;
+    margin-left: 18px;
+  }
+
+  .part-wrapper {
+    cursor: pointer;
+    padding: 0 25px;
+    border-top: 1px solid rgba(248, 253, 255, 0.7);
+    border-bottom: 1px solid rgba(248, 253, 255, 0.7);
+    position: relative;
+    margin-right: 0;
+  }
+
+  .part-wrapper div {
+    display: none;
+  }
+
+  .part-wrapper h3 {
+    font-size: 13px;
+    margin-bottom: 20px;
+    margin-top: 24px;
+  }
+
+  .our-ofice div {
+    display: none;
+  }
+
+  .our-ofice {
+    cursor: pointer;
+    padding: 0 25px;
+    border-bottom: 1px solid rgba(248, 253, 255, 0.7);
+    max-width: 100%;
+    margin-right: 0;
+    position: relative;
+    padding-bottom: 5px;
+    margin-left: 0;
+  }
+
+  .our-ofice h3 {
+    margin-top: 22px;
+  }
+
+  .our-ofice a {
+    font-size: 14px;
+  }
+
+  .our-ofice p {
+    padding-top: 11px;
+    font-size: 14px;
+    padding-bottom: 10px;
   }
 
   .goods {
@@ -3053,6 +3143,14 @@ p {
     line-height: 39px;
     padding-right: 20px;
     margin-bottom: 30px;
+  }
+
+  .goods-title__desctop {
+    display: none;
+  }
+
+  .goods-title__mobile {
+    display: block;
   }
 
   .form-checkbox {
@@ -3141,79 +3239,6 @@ p {
 }
 
 @media (max-width: 550px) {
-  .footer-wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    padding: 35px 0 20px 0;
-  }
-
-  .social-links {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    margin-right: 5px;
-  }
-
-  .social-links__list {
-    margin-bottom: 0;
-    margin-left: 18px;
-  }
-
-  .part-wrapper {
-    padding: 0 25px;
-    border-top: 1px solid rgba(248, 253, 255, 0.7);
-    border-bottom: 1px solid rgba(248, 253, 255, 0.7);
-    position: relative;
-    margin-right: 0;
-  }
-
-  .part-wrapper div {
-    display: none;
-  }
-
-  .part-wrapper h3 {
-    font-size: 13px;
-    margin-bottom: 20px;
-    margin-top: 24px;
-  }
-
-  .our-ofice div {
-    display: none;
-  }
-
-  .our-ofice {
-    padding: 0 25px;
-    border-bottom: 1px solid rgba(248, 253, 255, 0.7);
-    max-width: 100%;
-    margin-right: 0;
-    position: relative;
-    padding-bottom: 5px;
-    margin-left: 0;
-  }
-
-  .our-ofice h3 {
-    margin-top: 22px;
-  }
-
-  .our-ofice a {
-    font-size: 14px;
-  }
-
-  .our-ofice p {
-    padding-top: 11px;
-    font-size: 14px;
-    padding-bottom: 10px;
-  }
-
   .article a {
     margin-left: 0;
     padding: 10px;
@@ -3251,8 +3276,6 @@ p {
 
   .form__submit button {
     width: 100%;
-    margin-top: -8px;
-    margin-bottom: 15px;
     padding: 17px 70px 10px 70px;
     margin: 0 auto;
   }
@@ -3285,6 +3308,21 @@ p {
     margin-left: 20px;
   }
 
+  .social-links {
+    margin-right: -8px;
+  }
+
+  .our-ofice h3 {
+    margin-top: 22px;
+    letter-spacing: 0.05px;
+  }
+
+  .our-ofice p {
+    padding-top: 13px;
+    padding-bottom: 8px;
+    letter-spacing: 0.5px;
+  }
+
   .main-wrapper {
     margin-bottom: 48px;
   }
@@ -3295,6 +3333,8 @@ p {
   }
 
   .article {
+    top: 43%;
+    left: calc(100vw - 48%);
     max-width: 300px;
   }
 
@@ -3308,7 +3348,7 @@ p {
     max-width: 300px;
     font-size: 13px;
     margin-bottom: 44px;
-    word-spacing: normal;
+    word-spacing: 6px;
     line-height: 180%;
   }
 
@@ -3388,8 +3428,8 @@ p {
   }
 
   .goods {
-    padding-top: 32px;
-    padding-bottom: 83px;
+    padding-top: 40px;
+    padding-bottom: 86px;
   }
 
   .goods .container {
@@ -3421,11 +3461,13 @@ p {
   }
 
   .form-container {
-    padding: 45px 8px;
+    padding: 42px 8px;
     padding-bottom: 88px;
   }
 
   .form-wrapper h3 {
+    margin-top: 4px;
+    margin-bottom: 0;
     font-size: 27px;
     line-height: 43px;
   }
@@ -3433,7 +3475,7 @@ p {
   .form-wrapper p {
     font-size: 16px;
     line-height: 20px;
-    margin-bottom: 34px;
+    margin-bottom: 32px;
   }
 
   .form__field-text {

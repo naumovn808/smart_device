@@ -1,5 +1,5 @@
 .container.cards {
-  padding: 0 48px 0 50px;
+  padding: 0 48px 0 42px;
 
   @include vp-374 {
     padding: 0 25px;
@@ -12,6 +12,7 @@
   grid-template-columns: repeat(2, 595px);
   gap: 30px;
   justify-content: center;
+  margin-bottom: 120px;
 
   @include vp-1439 {
     padding: 120px 80px;

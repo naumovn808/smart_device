@@ -21,6 +21,11 @@
   align-content: center;
   margin-right: 59px;
 
+  @include vp-1279 {
+    margin-right: 0;
+  }
+
+
   @include vp-1023 {
     margin-right: 10px;
   }
@@ -47,6 +52,7 @@
   @include vp-1439 {
     padding: 0;
     flex-grow: 0;
+    margin: 0;
   }
 
   @include vp-1023 {
@@ -92,7 +98,7 @@
   color: $color-white;
   font-weight: 400;
 
-  @include vp-1279 {
+  @include vp-1023 {
     display: none;
   }
 }
@@ -132,6 +138,6 @@
   }
 
   @include vp-1279 {
-    margin-right: 30px;
+    margin-right: 20px;
   }
 }

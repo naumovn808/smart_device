@@ -1,7 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
-import {useFooterAccordion, useAboutAccordion, changeTitleText} from './modules/scripts.js';
+import {useFooterAccordion, useAboutAccordion} from './modules/scripts.js';
 // ---------------------------------
 
 setTimeout(() => {
@@ -13,7 +13,6 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
   useAboutAccordion();
   useFooterAccordion();
-  changeTitleText();
 
   // accordion();
   iosVhFix();

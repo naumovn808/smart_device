@@ -39,7 +39,8 @@
     margin-right: 20px;
   }
 
-  @media (max-width: 550px) {
+  @include vp-767 {
+    cursor: pointer;
     padding: 0 25px;
     border-top: 1px solid rgba(248, 253, 255, 0.7);
     border-bottom: 1px solid rgba(248, 253, 255, 0.7);
@@ -49,7 +50,7 @@
 }
 
 .part-wrapper div {
-  @media (max-width: 550px) {
+  @include vp-767 {
     display: none;
   }
 }
@@ -75,7 +76,7 @@
   }
 }
 
-.part-wrapper button > span {
+.part-wrapper button>span {
   display: none;
 
   &::after {
@@ -103,7 +104,7 @@
   }
 }
 
-.part-wrapper button > span.is-close {
+.part-wrapper button>span.is-close {
   width: 0;
 }
 
@@ -120,7 +121,7 @@
     font-size: 13px;
   }
 
-  @media (max-width: 550px) {
+  @include vp-767 {
     font-size: 13px;
     margin-bottom: 20px;
     margin-top: 24px;

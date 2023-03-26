@@ -116,6 +116,8 @@
 }
 
 .nav button {
+  min-width: 160px;
+  max-width: 240px;
   display: block;
   cursor: pointer;
   background: none;

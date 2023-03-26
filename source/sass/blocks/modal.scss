@@ -239,15 +239,26 @@
 }
 
 .modal-checkbox input {
-  width: 0;
-  height: 0;
 
-  &:checked::after {
-    content: "";
+  &:focus-visible+label::before {
+    border-color: black;
   }
+
+  &:checked~span {
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 12px;
+    transform: rotate(130deg);
+    width: 6px;
+    height: 4px;
+    border-top: 1px solid $color-default-white;
+    border-right: 1px solid $color-default-white;
+  }
+
 }
 
-.modal-checkbox label + input {
+.modal-checkbox label {
   &::before {
     position: absolute;
     top: 5px;
@@ -260,21 +271,6 @@
     border-radius: 2px;
   }
 
-  &::after {
-    display: block;
-    position: absolute;
-    top: 10px;
-    left: 12px;
-    transform: rotate(130deg);
-    width: 6px;
-    height: 4px;
-    border-top: 1px solid $color-default-white;
-    border-right: 1px solid $color-default-white;
-  }
-
-  &:focus-visible::before {
-    border: 1px solid $color-default-black;
-  }
 }
 
 .modal-user-phone {
@@ -287,5 +283,6 @@
 
 .modal-submit {
   display: flex;
+
   flex-direction: column-reverse;
 }
